@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="120" viewBox="0 0 880 120" role="img" aria-labelledby="t d">
+  <title id="t">Try the new nowcast feature: Sky</title>
+  <desc id="d">Cloud nowcast for an observing site: clear-sky timeline for tonight.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#151a2e"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9aa6c4" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#9aa6c4" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#9aa6c4" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#9aa6c4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="120" rx="14" fill="url(#night)"/>
+  <rect x="0.5" y="0.5" width="879" height="119" rx="13.5" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="610" cy="22" r="1.2" opacity="0.8"/><circle cx="650" cy="48" r="0.9" opacity="0.6"/>
+    <circle cx="700" cy="18" r="1.4" opacity="0.9"/><circle cx="742" cy="40" r="0.8" opacity="0.5"/>
+    <circle cx="790" cy="24" r="1.1" opacity="0.7"/><circle cx="835" cy="52" r="1.3" opacity="0.8"/>
+    <circle cx="590" cy="60" r="0.8" opacity="0.5"/><circle cx="820" cy="14" r="0.9" opacity="0.6"/>
+  </g>
+  <!-- moon -->
+  <circle cx="768" cy="32" r="11" fill="#f2f0ed" opacity="0.9"/>
+  <circle cx="773" cy="28" r="10" fill="#10152a"/>
+  <!-- drifting cloud band -->
+  <ellipse cx="660" cy="74" rx="110" ry="12" fill="url(#cloud)"/>
+
+  <!-- clear-sky timeline -->
+  <g transform="translate(580 92)">
+    <rect width="270" height="10" rx="5" fill="#ffffff" fill-opacity="0.06"/>
+    <rect x="0" width="70" height="10" rx="5" fill="#7d8aa8" fill-opacity="0.6"/>
+    <rect x="74" width="150" height="10" rx="5" fill="#6fd3a8"/>
+    <rect x="228" width="42" height="10" rx="5" fill="#7d8aa8" fill-opacity="0.6"/>
+    <text x="149" y="-6" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="10" fill="#6fd3a8">clear window</text>
+  </g>
+
+  <!-- telescope icon -->
+  <g transform="translate(36 34)" fill="none" stroke="#f2a27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 22 26 10l4 7-22 12z"/>
+    <path d="M26 10l6-3 4 7-6 3"/>
+    <path d="M17 26l-5 14M19 25l5 15"/>
+  </g>
+  <text x="90" y="54" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#f2a27a" letter-spacing="1.5">NEW</text>
+  <text x="130" y="54" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#f2f0ed">Try the nowcast feature: Sky  →</text>
+  <text x="90" y="80" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#a3abc2">Cloud above your observing site for tonight, hour by hour.</text>
+</svg>

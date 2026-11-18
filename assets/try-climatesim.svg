@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-labelledby="t d">
+  <title id="t">Try out ClimateSim</title>
+  <desc id="d">Live demo of ClimateSim, an MPI advection-diffusion lab, runs in your browser.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17181d"/>
+      <stop offset="1" stop-color="#0f1013"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fcffa4"/>
+      <stop offset="0.25" stop-color="#f98e09"/>
+      <stop offset="0.55" stop-color="#bc3754"/>
+      <stop offset="0.8" stop-color="#57106e"/>
+      <stop offset="1" stop-color="#000004" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tail" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f98e09" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#bc3754" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#2d0b59" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2a27a"/>
+      <stop offset="1" stop-color="#e8784a"/>
+    </linearGradient>
+    <clipPath id="panel"><rect x="560" y="22" width="296" height="176" rx="12"/></clipPath>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="220" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="879" height="219" rx="15.5" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- logo mark -->
+  <rect x="36" y="36" width="40" height="40" rx="10" fill="#2a1d18" stroke="#e8784a" stroke-opacity="0.5"/>
+  <g fill="none" stroke="#f2a27a" stroke-width="2.4" stroke-linecap="round">
+    <path d="M45 49c4-4 7 4 11 0s7 4 11 0"/>
+    <path d="M45 56c4-4 7 4 11 0s7 4 11 0"/>
+    <path d="M45 63c4-4 7 4 11 0s7 4 11 0"/>
+  </g>
+  <text x="88" y="63" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#f2f0ed">ClimateSim</text>
+
+  <text x="36" y="118" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#f2f0ed">Try out ClimateSim</text>
+  <text x="36" y="146" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#a39f9a">Draw a field, run 2D and 3D advection–diffusion, watch it evolve.</text>
+
+  <rect x="36" y="164" width="196" height="36" rx="8" fill="url(#btn)"/>
+  <text x="134" y="187" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1110">Open the live demo  →</text>
+  <text x="248" y="187" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#7d7975">runs in your browser · no install</text>
+
+  <!-- field preview -->
+  <g clip-path="url(#panel)">
+    <rect x="560" y="22" width="296" height="176" fill="#0d0a1c"/>
+    <rect x="560" y="22" width="296" height="176" fill="url(#grid)"/>
+    <ellipse cx="660" cy="128" rx="118" ry="62" fill="url(#tail)" transform="rotate(-22 660 128)"/>
+    <ellipse cx="760" cy="84" rx="84" ry="46" fill="url(#tail)" transform="rotate(-30 760 84)"/>
+    <ellipse cx="672" cy="122" rx="54" ry="36" fill="url(#core)" transform="rotate(-25 672 122)"/>
+    <ellipse cx="752" cy="88" rx="40" ry="28" fill="url(#core)" transform="rotate(-30 752 88)"/>
+  </g>
+  <rect x="560.5" y="22.5" width="295" height="175" rx="11.5" fill="none" stroke="#ffffff" stroke-opacity="0.1"/>
+  <text x="574" y="186" font-family="Consolas, Menlo, monospace" font-size="11" fill="#cfcac4" fill-opacity="0.75">1024 × 1024 · t = 42 h</text>
+</svg>
